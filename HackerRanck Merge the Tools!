@@ -1,0 +1,8 @@
+def merge_the_tools(string, k):
+    
+    #split string in subsrings list
+    list = [string[i:i+k] for i in range(0, len(string), k)]
+    
+    #delete duplicates chars and print each substring
+    for str in list:
+        print("".join(set(str)))
